@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-container {
+  width: 100%;
+  background: dimgrey;
+}
+
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  color: white;
+}
+
+.brand-image {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.navbar-lists {
+  display: flex;
+  align-items: center;
+}
+
+.lists {
+  list-style: none;
+  display: flex;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.lists li {
+  padding: 1rem;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+.lists li:hover {
+  background: red;
+}
+
+.toggler-btn {
+  font-size: 2rem;
+  position: absolute;
+  right: 7%;
+  top: 7px;
+  display: none;
+}
+
+.toggler-btn i {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .brand-image {
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-lists {
+    background: darkgray;
+    display: none;
+  }
+
+  .lists {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .lists li {
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .toggler-btn {
+    display: flex;
+    top: 20px;
+  }
+
+  .show-navbar-list {
+    background: darkgray;
+    display: flex;
+    align-items: center;
+  }
+}
